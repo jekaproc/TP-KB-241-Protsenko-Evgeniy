@@ -1,2 +1,17 @@
-print ("Hello World!")
-print ("Second Hello!")
+import math
+def quadratic_equation(a, b, c):
+    D = b**2 - 4*a*c
+    if D > 0:
+        x1 = (-b + math.sqrt(D)) / (2*a)
+        x2 = (-b - math.sqrt(D)) / (2*a)
+        return x1, x2
+    elif D == 0:
+        x = -b / (2*a)
+        return x,
+    else:
+        return "Немає дійсних коренів"
+    
+a = 1
+b = -5
+c = 6
+print(quadratic_equation(a, b, c))
