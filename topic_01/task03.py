@@ -6,4 +6,4 @@ def dyskryminant(a, b, c):
 a = int(input("Введіть значення a: "))
 b = int(input("Введіть значення b: "))
 c = int(input("Введіть значення c: "))
-print(dyskryminant(a, b, c))
+print("Дискримінант = " + str(dyskryminant(a, b, c)))
