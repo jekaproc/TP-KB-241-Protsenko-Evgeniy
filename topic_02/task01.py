@@ -15,8 +15,8 @@ def solve_quadratic(a, b, c):
     else:
         return "Немає дійсних коренів"
 
-a = int(input("Введіть значення a: ")) # 1
-b = int(input("Введіть значення b: ")) # 6
-c = int(input("Введіть значення c: ")) # 5
+a = int(input("Введіть значення a: ")) # 1 - 1 - 1
+b = int(input("Введіть значення b: ")) # 6 - 2 - 1
+c = int(input("Введіть значення c: ")) # 5 - 1 - 1
 
 print('Корені рівняння: ' + str(solve_quadratic(a, b, c)))

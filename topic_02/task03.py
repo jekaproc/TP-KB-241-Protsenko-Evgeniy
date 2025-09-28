@@ -1,4 +1,3 @@
-
 def plus(a, b):
         return a + b
 
@@ -20,17 +19,19 @@ b = float(input("Введіть друге число: "))
 match dia:
     case "+":
         result = plus(a, b)
+        print("Результат: ", result)
 
     case "-":
       result = minus(a, b)
+      print("Результат: ", result)
 
     case "*":
         result = mul(a, b)
+        print("Результат: ", result)
 
     case "/":
         result = div(a, b)
+        print("Результат: ", result)
 
-    case "_":
-        print("Невідома дія")
-
-print("Результат: ", result)
+    case _:
+        print("Невідома дія!")

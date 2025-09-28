@@ -1,4 +1,3 @@
-
 def plus(a, b):
         return a + b
 
@@ -19,16 +18,19 @@ b = float(input("Введіть друге число: "))
 
 if dia == "+":
     result = plus(a, b)
+    print("Результат: ", result)
 
 elif dia == "-":
       result = minus(a, b)
+      print("Результат: ", result)
 
 elif dia == "*":
     result = mul(a, b)
+    print("Результат: ", result)
 
 elif dia == "/":
     result = div(a, b)
-else:
-      print("Невідома дія")
+    print("Результат: ", result)
 
-print("Результат: ", result)
+else:
+      print("Невідома дія!")
