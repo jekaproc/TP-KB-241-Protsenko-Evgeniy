@@ -1,4 +1,3 @@
-import math
 def dyskryminant(a, b, c):
     D = b**2 - 4*a*c
     return D
