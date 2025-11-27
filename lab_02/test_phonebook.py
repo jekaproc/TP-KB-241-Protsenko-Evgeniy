@@ -10,11 +10,9 @@ def test_create():
     assert phonebook[0]["city"] == "Odessa"
 
 def test_update():
-    phonebook = [{"name": "Anna", "age": "21",
-                  "phone": "0658495576", "city": "Chernihiv"}]
+    phonebook = [{"name": "Anna", "age": "21", "phone": "0658495576", "city": "Chernihiv"}]
 
-    updated = {"name": "Iryna", "age": "32",
-               "phone": "0654364343", "city": "Kyiv"}
+    updated = {"name": "Iryna", "age": "32", "phone": "0654364343", "city": "Kyiv"}
 
     phonebook[0].update(updated)
 
@@ -24,10 +22,8 @@ def test_update():
     assert phonebook[0]["city"] == "Kyiv"
 
 def test_delete():
-    phonebook = [
-        {"name": "Bob", "age": "18", "phone": "0665161482", "city": "Kyiv"},
-        {"name": "Emma", "age": "21", "phone": "0658718576", "city": "Chernihiv"},
-    ]
+    phonebook = [{"name": "Bob", "age": "18", "phone": "0665161482", "city": "Kyiv"},
+                 {"name": "Anna", "age": "21", "phone": "0658718576", "city": "Chernihiv"}]
 
     for i, elem in enumerate(phonebook):
         if elem["name"] == "Bob":
@@ -35,4 +31,4 @@ def test_delete():
             break
 
     assert len(phonebook) == 1
-    assert phonebook[0]["name"] == "Emma"
+    assert phonebook[0]["name"] == "Anna"
